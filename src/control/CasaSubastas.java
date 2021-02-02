@@ -66,6 +66,6 @@ public class CasaSubastas {
                 result.add(producto);
             }
         }
-        return result
+        return result;
     }
 }
