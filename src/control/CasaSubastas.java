@@ -56,4 +56,16 @@ public class CasaSubastas {
                 indexOf(producto));
         return prod.getTiempoRestante();
     }
+    
+    public List<Subject> getSubastasActivas() {
+        List<Subject> result = new ArrayList<>();
+        
+        for (Subject sub : listaProductos) {
+            Producto producto = (Producto) sub;
+            if(producto.estaActiva()) {
+                result.add(producto);
+            }
+        }
+        return result
+    }
 }

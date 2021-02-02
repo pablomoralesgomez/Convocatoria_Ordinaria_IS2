@@ -122,7 +122,9 @@ public class Producto implements Subject{
         };
     }
     
-    
+    public boolean estaActiva() {
+        return estado.equals(SUBASTANDO);
+    }
     
     public enum Estado {
         SIN_SUBASTAR, SUBASTANDO, SUBASTADO;
